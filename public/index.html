@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title></title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form id="save" method="post" action="/save">
+					<h2>Save Data</h2>
+					<textarea name="save" rows="10" cols="30"></textarea>
+					<button class="btn btn-default" type="submit">Save</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h2>View Data</h2>
+				<button class="get_data btn btn-default">Get Data</button>
+				<p class="display"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form id="query" method="post" action="/query">
+					<h2>Query Data</h2>
+					<textarea name="query" rows="10" cols="30"></textarea>
+					<button class="btn btn-default" type="submit">Query</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h2>Open Test DB</h2>
+				<form id="open" method="post" action="/open">
+					<button class="btn btn-default" type="submit">Open</button>
+				</form>
+			</div>
+		</div>
+	</div>
+<hr>
+<script type="text/javascript">
+	$('.get_data').on('click', function(){
+		$.get('/data').then(function(response){
+			$('.display').text(response);
+		})
+	})
+	$('form').on('submit', function(e){
+		e.preventDefault();
+		var postData = $('#'+e.target.id).serialize();
+		console.log(postData);
+		$.ajax({
+			type: 'post',
+            url: $('#'+e.target.id).attr('action'),
+            data: postData,
+		})
+	})
+</script>
+</body>
+</html>
