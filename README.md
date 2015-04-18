@@ -7,10 +7,11 @@ git clone https://github.com/incrediblesound/nebulaDB.git
 cd nebulaDB
 node nebula.js
 ```
-2) Clone this repository and run the server
+2) Clone this repository, install dependencies and run the server
 ```shell
 git clone https://github.com/incrediblesound/nebuladb-dashboard.git
 cd nebuladb-dashboard
+npm install
 node server.js
 ```
 3) navigate to localhost:3000    
