@@ -13,8 +13,8 @@ git clone https://github.com/incrediblesound/nebuladb-dashboard.git
 cd nebuladb-dashboard
 node server.js
 ```
-3) navigate to localhost:3000
-4) click "open" to open a new database
-5) enter a query into the save data box, for example: ["John","->","user"]
-6) query the data in the query data box
-7) Click get data to see the server response
+3) navigate to localhost:3000    
+4) click "open" to open a new database    
+5) enter a query into the save data box, for example: ["John","->","user"]    
+6) query the data in the query data box    
+7) Click get data to see the server response    
