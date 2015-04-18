@@ -6,7 +6,6 @@
   "dependencies": {
     "body-parser": "^1.12.3",
     "express": "^4.12.3",
-    "nebuladb": "^1.0.4",
     "node_nebula": "^1.0.2"
   },
   "devDependencies": {},
