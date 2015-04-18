@@ -1,0 +1,27 @@
+{
+  "name": "nebula_test",
+  "version": "1.0.0",
+  "description": "a simple dashboard for experimenting with nebuladb",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "nebuladb": "^1.0.4",
+    "node_nebula": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/incrediblesound/nebuladb-dashboard.git"
+  },
+  "author": "James H Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/incrediblesound/nebuladb-dashboard/issues"
+  },
+  "homepage": "https://github.com/incrediblesound/nebuladb-dashboard"
+}
